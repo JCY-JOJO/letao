@@ -1,0 +1,16 @@
+
+
+.body_bg{
+  background-color: #212c32;
+}
+
+.panel{
+  margin-top: 150px;
+}
+
+.panel-heading h3{
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+}
