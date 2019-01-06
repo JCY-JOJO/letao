@@ -1,0 +1,163 @@
+
+@import "base";
+
+
+.lt_aside{
+    background-color: #212c32;
+    width: 180px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: all 1s;
+
+    &.hidemenu{
+        left: -180px;
+    }
+
+    a,p {
+        color: #fff;
+        text-decoration: none;
+
+    }
+
+    .brand{
+        width: 100%;
+        height: 50px;
+        background-color: #367FA9;
+
+        a{
+            font-size: 24px;
+            color: #fff;
+            text-align: center;
+            line-height: 50px;
+            display: block;
+        }
+    }
+     
+    // 头像
+    .user{
+        height: 190px;
+        padding-top: 30px;
+
+        img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        p{
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+            font-size: 18px;
+        }
+    }
+
+    // 右侧导航
+    .nav{
+        text-align: center;
+
+        a{
+            height: 40px;
+            line-height: 40px;
+            display: block;
+
+            &.current{
+                background-color: #1D1F21;
+                border-left: 3px solid #006699;
+            }
+
+            i{
+                padding-right: 5px;
+            }
+        }
+
+        .child{
+            display: none;
+            
+            a{
+                padding-left: 30px;
+
+            }
+        }
+    }
+
+}
+
+// <!-- 右侧主体部分 -->
+.lt_main{
+    padding-top: 50px;
+    padding-left: 180px;
+    background-color: #fff;
+    height: 1500px;
+    transition: all 1s;
+
+    &.hidemenu{
+        padding-left: 0;
+    }
+
+    // 顶部
+    .lt_topbar{
+        height: 50px;
+        width: 100%;
+        line-height: 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-left: 180px;
+        transition: all 1s;
+        background-color: #ccc;
+
+        &.hidemenu{
+            padding-left: 0;
+        }
+
+        .icon_menu{
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .icon_logout{
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+
+    // 面包屑导航
+    .mt_20{
+        margin-top: 20px;
+    }
+
+
+    .lt_content{
+
+        .echarts_left,
+        .echarts_right {
+          height: 400px;
+          width: 48%;
+          background-color: skyblue;
+        }
+    }
+    
+}
+
+    // 模态框
+    .modal{
+
+        .modal-body{
+
+            p{
+                color: red;
+            }
+        }
+    }
